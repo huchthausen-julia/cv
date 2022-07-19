@@ -30,3 +30,37 @@ h6 {
   margin: 0 auto;
   padding: 16px;
 }
+
+.nav-link {
+  padding: 4px 8px;
+  color: blue;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: cornflowerblue;
+}
+
+.nav-link:active {
+  color: black;
+  background-color: gainsboro;
+}
+.nav-link + .nav-link {
+  margin-left: 16px;
+}
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px solid grey;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
