@@ -1,12 +1,10 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0px;
-}
-
-* {
+html {
   font-family: "Roboto", sans-serif;
 }
 
@@ -19,16 +17,25 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
+*::selection {
+  background-color: green;
+}
+
 .header {
   padding: 48px 16px;
   text-align: center;
   background-color: goldenrod;
 }
+.discription::before {
+  content: "🏃‍♀️";
+}
 
-.main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
+.discription::after {
+  content: "👩‍💻";
 }
 
 .nav-link {
