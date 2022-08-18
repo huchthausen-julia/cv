@@ -9,6 +9,17 @@ html {
   font-size: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
 h1,
 h2,
 h3,
@@ -29,6 +40,7 @@ h6 {
   background-color: goldenrod;
   position: relative;
 }
+
 .heading-group {
   font-size: 4rem;
 }
@@ -55,6 +67,22 @@ h6 {
   color: black;
 }
 
+@media screen and (min-width: 992px) {
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
+
 .nav-link {
   padding: 0.25rem 0.5rem;
   color: blue;
@@ -72,13 +100,21 @@ h6 {
 .nav-link + .nav-link {
   margin-left: 1rem;
 }
+
 .main {
   max-width: 60ch;
   margin: 0 auto;
   padding: 1rem;
 }
+
 .main > * + * {
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main > * + * {
+    margin-top: 5rem;
+  }
 }
 
 .main > * {
