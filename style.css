@@ -34,11 +34,19 @@ h6 {
   background-color: green;
 }
 
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: black;
+}
+
 .header {
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-color: goldenrod;
+  background-image: linear-gradient(180deg, snow, green);
   position: relative;
 }
 
@@ -50,12 +58,12 @@ h6 {
   font-size: 1em;
 }
 
-.discription::before {
-  content: "🏃‍♀️";
+.discription {
+  font-size: 0.5em;
 }
 
 .discription::after {
-  content: "👩‍💻";
+  content: " 👩‍💻";
 }
 
 .hire-me {
@@ -132,7 +140,7 @@ h6 {
 }
 
 .main > * {
-  border-top: 0.125rem solid grey;
+  border-top: 0.125rem solid green;
 }
 
 .main > *:first-child {
@@ -156,4 +164,19 @@ h6 {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.footer {
+  margin-top: 3rem;
+  background-color: green;
+  padding: 2rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link {
+  color: black;
 }
