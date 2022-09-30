@@ -124,6 +124,7 @@ a:active {
 .nav-link {
   padding: 0.25rem 0.5rem;
   color: var(--accent-text-color);
+  transition: background-color 0.25s ease-in-out;
 }
 
 .nav-link:hover {
@@ -138,6 +139,12 @@ a:active {
 
 .nav-link:visited {
   color: var(--accent-text-color);
+}
+
+.nav-link:focus {
+  background-color: var(--accent-color);
+  outline-color: var(--accent-text-color);
+  outline-style: dotted;
 }
 
 @media screen and (min-width: 768px) {
