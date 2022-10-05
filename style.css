@@ -89,7 +89,16 @@ a:active {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  opacity: 0.5;
   background: var(--accent-color);
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 992px) {
